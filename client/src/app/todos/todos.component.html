@@ -1,0 +1,33 @@
+<div class="main">
+  <h3>Things Todo</h3>
+  <div *ngIf="error">
+    <p>Error: {{ error }}</p>
+  </div>
+  <div *ngIf="data">
+    <p>Data Message: {{ data.greetingWithAuth.message}}</p>
+  </div>
+
+  <form class="form" [formGroup]="todoForm" (ngSubmit)="addTodo()">
+    <input class="input" type="text" name="name" placeholder="Enter todo"  formControlName="name"/>
+    <br />
+    <input class="input" type="text" name="description"  placeholder="Enter Description"  formControlName="description"/>
+    <br /><br>
+    <button class="submit-button" [disabled]="todoForm.invalid">SUBMIT</button>
+  </form>
+<br><br><br>
+  <div class="todo-container" *ngIf="todos">
+    <ul>
+      <li *ngFor="let todo of todos">
+        <div class="todo">
+        <span class="todo-name">{{ todo.name }}</span>
+        <span class="todo-description">{{ todo.description }}</span>
+      </div>
+        <button class="delete-btn" (click)="deleteTodo(todo.id)"> DELETE TODO</button>
+      </li>
+    </ul>
+  </div>
+  <button class="delete-btn" (click)="signUp()"> Sign In Authentication</button>
+  <button class="delete-btn" (click)="post()"> POST Authentication</button>
+
+
+  </div>

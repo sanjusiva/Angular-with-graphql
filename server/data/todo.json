@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Cook Meals",
+    "description": "Need to cook meals"
+  },
+  {
+    "id": 2,
+    "name": "Wash Clothes",
+    "description": "Need to put the clothes in WM"
+  },
+  {
+    "id": 3,
+    "name": "Sleep Well",
+    "description": "8hrs of sleep is compulsory"
+  },
+  {
+    "id": 4,
+    "name": "Search live place",
+    "description": "Need to vacate from pg"
+  },
+  {
+    "id": 5,
+    "name": "Book  ticket",
+    "description": "Need to book train ticket"
+  },
+  {
+    "id": 6,
+    "name": "Games",
+    "description": "Exercise is must"
+  }
+]
